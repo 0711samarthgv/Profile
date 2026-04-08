@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "Samarth G V | AI/ML Engineer & Full Stack Developer",
+    "description": "Modern portfolio of Samarth G V featuring AI/ML, full stack engineering, and high-impact software projects."
+  },
+  "personal": {
+    "name": "Samarth G V",
+    "role": "AI/ML Engineer | Full Stack Developer",
+    "tagline": "Building intelligent systems and polished products that solve real-world problems.",
+    "about": "I am a Computer Science (AI/ML) student who blends machine learning with full stack engineering to build practical, scalable software. I enjoy solving ambiguous problems, turning data into insights, and designing products that users love. My focus is creating robust AI-powered systems with clean architecture and measurable impact.",
+    "email": "samarthgv07work@gmail.com",
+    "phone": "+91 8549893172",
+    "location": "Mysore, India",
+    "links": {
+      "github": "https://github.com/",
+      "linkedin": "https://linkedin.com/",
+      "resume": "/Samarth_GV_Resume.pdf"
+    },
+    "githubUsername": "samarth-gv"
+  },
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["Python", "C++", "Java"]
+    },
+    {
+      "category": "ML Stack",
+      "items": ["TensorFlow", "Scikit-learn", "Pandas", "NumPy"]
+    },
+    {
+      "category": "Web",
+      "items": ["React", "Node.js", "FastAPI"]
+    },
+    {
+      "category": "DevOps & Tools",
+      "items": ["Docker", "Jenkins", "GCP", "Power BI", "GitHub", "SVN"]
+    },
+    {
+      "category": "Databases",
+      "items": ["MongoDB", "SQL", "SQLite"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Smart Finance",
+      "category": "Full Stack",
+      "description": "A production-style personal finance tracking app that helps users monitor spending by category and understand financial behavior through interactive visual analytics.",
+      "stack": ["React", "Node.js", "TypeScript", "Prisma", "MongoDB", "Docker", "REST APIs", "Chart.js"],
+      "features": [
+        "Expense tracking across custom categories",
+        "Data visualization dashboard for trends and habits",
+        "Containerized setup with Docker for consistent deployment"
+      ],
+      "impact": "Showcased end-to-end product execution from requirements to deployment while improving visibility into spending decisions.",
+      "github": "https://github.com/",
+      "demo": "https://example.com"
+    },
+    {
+      "title": "Malicious Insider Threat Detection System",
+      "category": "ML",
+      "description": "An anomaly detection platform that analyzes user behavior and access patterns to flag suspicious internal activities before major security incidents occur.",
+      "stack": ["Python", "Scikit-learn", "TensorFlow", "Pandas", "NumPy", "MySQL", "FastAPI", "Matplotlib", "Seaborn"],
+      "features": [
+        "Behavior-driven anomaly detection pipeline",
+        "Near real-time risk scoring and alerting",
+        "API-based integration for enterprise workflows"
+      ],
+      "impact": "Demonstrated practical security ML application and helped model proactive breach prevention strategies.",
+      "github": "https://github.com/",
+      "demo": "https://example.com"
+    },
+    {
+      "title": "VoiceAuth Secure",
+      "category": "ML",
+      "description": "A speaker recognition-based authentication system built with robust preprocessing, feature extraction, and model training for secure identity verification.",
+      "stack": ["Python", "TensorFlow", "NumPy", "SQLite", "Audio Processing"],
+      "features": [
+        "Audio cleaning and feature extraction workflow",
+        "Speaker model training and secure voice profile storage",
+        "Unit-tested pipeline with strong reliability focus"
+      ],
+      "impact": "Achieved 90%+ speaker recognition accuracy in testing while strengthening biometric authentication fundamentals.",
+      "github": "https://github.com/",
+      "demo": "https://example.com"
+    },
+    {
+      "title": "Skill Swap Platform",
+      "category": "Web",
+      "description": "A peer-to-peer learning marketplace where users share expertise, find mentors by required skills, and engage through paid interactions.",
+      "stack": ["React", "Node.js", "MongoDB", "REST APIs"],
+      "features": [
+        "Skill listing and search-based matching",
+        "Peer-to-peer learning and interaction flows",
+        "Scalable and maintainable architecture focus"
+      ],
+      "impact": "Improved discoverability of peer learning opportunities and reinforced scalable full stack development practices.",
+      "github": "https://github.com/",
+      "demo": "https://example.com"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Lead, NSS Unit VVCE",
+      "period": "08/2025 - Present",
+      "summary": "Led student initiatives, coordinated team-driven events, and improved operational planning for impact-focused programs."
+    },
+    {
+      "title": "Co-Lead, Vector Flow Student Club",
+      "period": "07/2025 - Present",
+      "summary": "Helped drive technical sessions and collaborative learning initiatives for student developers."
+    }
+  ],
+  "achievements": [
+    "HackFusion 2K25 - Best Problem Statement (10/2025)",
+    "Winner of Code-Hunt 2K25 among 200+ participants for high-speed algorithmic problem solving (02/2025)"
+  ]
+}

@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 248 250 252;
+  --text: 15 23 42;
+  --muted: 71 85 105;
+  --card: 255 255 255;
+  --border: 226 232 240;
+  --primary: 59 130 246;
+  --secondary: 139 92 246;
+}
+
+.dark {
+  --bg: 2 6 23;
+  --text: 241 245 249;
+  --muted: 148 163 184;
+  --card: 15 23 42;
+  --border: 30 41 59;
+  --primary: 56 189 248;
+  --secondary: 167 139 250;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg text-text antialiased transition-colors duration-500;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+* {
+  @apply border-border;
+}
+
+.app-grid-bg {
+  background-image: linear-gradient(to bottom, transparent, rgba(15, 23, 42, 0.05)),
+    radial-gradient(circle at top left, rgba(99, 102, 241, 0.14), transparent 35%),
+    radial-gradient(circle at 70% 20%, rgba(14, 165, 233, 0.15), transparent 35%);
+}

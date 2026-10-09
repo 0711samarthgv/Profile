@@ -109,6 +109,53 @@
       "impact": "Simplified access to clinical trial information by automating data retrieval and providing AI-powered, context-aware summaries.",
       "github": "https://github.com/0711samarthgv/Clinical_research_assistant"
     },
+
+    {
+  "title": "Airline Operations & Performance Intelligence Platform",
+  "category": "Data Engineering & Machine Learning",
+  "description": "Built an end-to-end analytical platform processing over 1.67 million flight records using Python, Databricks, and PostgreSQL. Developed ETL pipelines, designed a star-schema data warehouse, implemented Random Forest-based flight delay prediction, and created interactive Power BI dashboards to analyze airline operations and performance.",
+  "stack": [
+    "Python",
+    "Pandas",
+    "SQL",
+    "Databricks",
+    "PySpark",
+    "PostgreSQL",
+    "ETL",
+    "Data Modeling",
+    "Star Schema",
+    "Random Forest",
+    "Scikit-learn",
+    "Power BI",
+    "DAX",
+    "SQLAlchemy"
+  ],
+  "features": [
+    "Processed, cleaned, transformed, and validated 1.67M+ flight records through an end-to-end ETL pipeline",
+    "Designed a PostgreSQL star-schema data warehouse with fact and dimension tables for analytical queries",
+    "Developed a Random Forest model to predict flight delays using historical flight data",
+    "Built interactive Power BI dashboards to analyze delays, cancellations, airline performance, and route-level trends"
+  ],
+  "impact": "Transformed 1.67M+ flight records into an end-to-end analytics solution combining scalable data processing, structured data warehousing, flight delay prediction, and interactive business intelligence."
+},
+    {
+      "title": "Skill Swap Platform",
+      "category": "Full Stack Development",
+      "description": "Built a peer-to-peer learning platform where users can share their skills, discover people with complementary expertise, and connect to exchange knowledge.",
+      "stack": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "REST APIs"
+      ],
+      "features": [
+        "Skill listing and search-based discovery",
+        "Peer-to-peer learning and interaction workflows",
+        "Structured backend APIs for platform functionality"
+      ],
+      "impact": "Made it easier to discover peer-learning opportunities while strengthening full-stack development and API design skills.",
+      "github": "https://github.com/0711samarthgv/Skill-Swap"
+    },
     {
       "title": "VoiceAuth Secure",
       "category": "AI/ML",
@@ -128,24 +175,7 @@
       "impact": "Achieved over 90% speaker recognition accuracy during testing, demonstrating the potential of voice-based biometric authentication.",
       "github": "https://github.com/"
     },
-    {
-      "title": "Skill Swap Platform",
-      "category": "Full Stack Development",
-      "description": "Built a peer-to-peer learning platform where users can share their skills, discover people with complementary expertise, and connect to exchange knowledge.",
-      "stack": [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "REST APIs"
-      ],
-      "features": [
-        "Skill listing and search-based discovery",
-        "Peer-to-peer learning and interaction workflows",
-        "Structured backend APIs for platform functionality"
-      ],
-      "impact": "Made it easier to discover peer-learning opportunities while strengthening full-stack development and API design skills.",
-      "github": "https://github.com/0711samarthgv/Skill-Swap"
-    },
+    
     {
       "title": "Smart Finance",
       "category": "Full Stack Development",

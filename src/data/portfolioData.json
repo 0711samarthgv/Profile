@@ -1,37 +1,31 @@
 
 {
   "seo": {
-    "title": "Samarth G V | AI/ML Engineer | Data Engineer | Software Developer",
-    "description": "Professional portfolio of Samarth G V showcasing AI/ML engineering, data engineering, business automation, and intelligent software solutions through practical projects and technical expertise."
+    "title": "Samarth G V | AI/ML Engineer & Data Engineer",
+    "description": "Portfolio of Samarth G V, an AI/ML engineering student building AI-powered applications, data pipelines, and business automation solutions."
   },
   "personal": {
     "name": "Samarth G V",
     "role": "AI/ML Engineer | Data Engineer | Software Developer",
     "tagline": "Building AI-powered applications, reliable data pipelines, and automation solutions to solve real-world problems.",
-    "about": "I have a background in Computer Science with a focus on AI/ML and a strong interest in building intelligent applications, data-driven solutions, and scalable software systems. I enjoy solving real-world problems through AI/ML, data engineering, business automation, and full-stack development. My goal is to transform complex data and ideas into practical, reliable solutions with meaningful impact.",
+    "about": "I am a Computer Science engineering student specializing in Artificial Intelligence and Machine Learning at Vidyavardhaka College of Engineering, Mysuru. I enjoy building practical AI applications, developing data pipelines, working with LLMs and retrieval-augmented generation, and creating automation solutions that solve real-world problems. My experience spans machine learning, backend development, data analytics, and Microsoft Power Platform.",
     "email": "samarthgv07work@gmail.com",
     "phone": "+91 8549893172",
-    "location": "Mysuru, India",
-    "links": {
-      "github": "https://github.com/0711samarthgv/",
-      "linkedin": "https://www.linkedin.com/in/samarth-gv-shetty/",
-      "resume": "/Samarth_GV_Resume.pdf"
-    },
-    "githubUsername": "0711samarthgv"
+    "location": "Mysuru, Karnataka, India",
+    "github": "https://github.com/0711samarthgv/",
+    "linkedin": "https://www.linkedin.com/in/samarth-gv-shetty/",
+    "resume": "/Samarth_GV_Resume_AIML.pdf"
   },
   "skills": [
     {
       "category": "Programming Languages",
-      "items": [
-        "Python",
-        "SQL",
-        "C++",
-        "Java"
-      ]
+      "items": ["Python", "SQL", "C++", "Java", "JavaScript", "TypeScript"]
     },
     {
       "category": "AI & Machine Learning",
       "items": [
+        "Machine Learning",
+        "Deep Learning",
         "TensorFlow",
         "Scikit-learn",
         "Pandas",
@@ -40,7 +34,24 @@
         "RAG",
         "LangChain",
         "LangGraph",
-        "AI Agents"
+        "AI Agents",
+        "ChromaDB"
+      ]
+    },
+    {
+      "category": "Data Engineering & Analytics",
+      "items": [
+        "ETL Pipelines",
+        "Data Cleaning",
+        "Data Transformation",
+        "Data Validation",
+        "Data Modeling",
+        "Databricks",
+        "PySpark",
+        "PostgreSQL",
+        "Power BI",
+        "DAX",
+        "Power Query"
       ]
     },
     {
@@ -49,47 +60,32 @@
         "React",
         "Node.js",
         "FastAPI",
-        "REST APIs"
+        "REST APIs",
+        "HTML",
+        "CSS",
+        "Tailwind CSS"
       ]
     },
     {
-      "category": "Data Engineering",
+      "category": "Databases & Tools",
       "items": [
-        "ETL",
-        "Data Modeling",
-        "Data Transformation",
-        "Data Validation",
-        "Databricks",
-        "PostgreSQL",
         "MongoDB",
-        "SQLite"
-      ]
-    },
-    {
-      "category": "Automation & Analytics",
-      "items": [
+        "SQLite",
+        "Prisma",
+        "Git",
+        "GitHub",
+        "Docker",
         "Microsoft Power Platform",
         "Power Apps",
-        "Power Automate",
-        "Power BI",
-        "Power Query"
-      ]
-    },
-    {
-      "category": "Tools & Cloud",
-      "items": [
-        "Docker",
-        "Jenkins",
-        "GCP",
-        "GitHub"
+        "Power Automate"
       ]
     }
   ],
   "projects": [
     {
       "title": "Clinical Research AI Assistant",
-      "category": "AI/ML",
-      "description": "Built an AI-powered assistant that helps researchers find and understand clinical trial information by retrieving relevant data and generating contextual summaries, making clinical research information easier to access.",
+      "category": "Generative AI & AI Agents",
+      "description": "Built an AI-powered clinical research assistant that retrieves and synthesizes clinical trial information using LLMs, retrieval-augmented generation, vector search, and ClinicalTrials.gov APIs.",
       "stack": [
         "Python",
         "LangChain",
@@ -97,51 +93,50 @@
         "LLMs",
         "RAG",
         "ChromaDB",
-        "Vector Search",
-        "REST APIs",
-        "AI Agents"
+        "REST APIs"
       ],
       "features": [
-        "AI-powered clinical trial search and information retrieval",
-        "RAG-based contextual summarization of clinical research data",
-        "AI agent integration with ClinicalTrials.gov REST APIs"
+        "Integrated ClinicalTrials.gov REST APIs to retrieve clinical trial information.",
+        "Used vector search and retrieval-augmented generation to provide context-aware responses.",
+        "Designed an AI assistant workflow for retrieving and synthesizing research information.",
+        "Organized retrieved information into useful summaries for clinical research exploration."
       ],
-      "impact": "Simplified access to clinical trial information by automating data retrieval and providing AI-powered, context-aware summaries.",
       "github": "https://github.com/0711samarthgv/Clinical_research_assistant"
     },
-
     {
-  "title": "Airline Operations & Performance Intelligence Platform",
-  "category": "Data Engineering & Machine Learning",
-  "description": "Built an end-to-end analytical platform processing over 1.67 million flight records using Python, Databricks, and PostgreSQL. Developed ETL pipelines, designed a star-schema data warehouse, implemented Random Forest-based flight delay prediction, and created interactive Power BI dashboards to analyze airline operations and performance.",
-  "stack": [
-    "Python",
-    "Pandas",
-    "SQL",
-    "Databricks",
-    "PySpark",
-    "PostgreSQL",
-    "ETL",
-    "Data Modeling",
-    "Star Schema",
-    "Random Forest",
-    "Scikit-learn",
-    "Power BI",
-    "DAX",
-    "SQLAlchemy"
-  ],
-  "features": [
-    "Processed, cleaned, transformed, and validated 1.67M+ flight records through an end-to-end ETL pipeline",
-    "Designed a PostgreSQL star-schema data warehouse with fact and dimension tables for analytical queries",
-    "Developed a Random Forest model to predict flight delays using historical flight data",
-    "Built interactive Power BI dashboards to analyze delays, cancellations, airline performance, and route-level trends"
-  ],
-  "impact": "Transformed 1.67M+ flight records into an end-to-end analytics solution combining scalable data processing, structured data warehousing, flight delay prediction, and interactive business intelligence."
-},
+      "title": "Airline Operations & Performance Intelligence Platform",
+      "category": "Data Engineering & Machine Learning",
+      "description": "Built an end-to-end analytics platform processing more than 1.67 million flight records using Python, Databricks, and PostgreSQL. Developed ETL workflows, designed a star-schema data warehouse, implemented Random Forest-based flight-delay prediction, and created interactive Power BI dashboards.",
+      "stack": [
+        "Python",
+        "Pandas",
+        "SQL",
+        "Databricks",
+        "PySpark",
+        "PostgreSQL",
+        "ETL",
+        "Data Modeling",
+        "Star Schema",
+        "Random Forest",
+        "Scikit-learn",
+        "Power BI",
+        "DAX",
+        "SQLAlchemy"
+      ],
+      "features": [
+        "Processed, cleaned, transformed, and validated more than 1.67 million flight records.",
+        "Designed a PostgreSQL star-schema warehouse with fact and dimension tables for analytical queries.",
+        "Developed a Random Forest model to predict flight delays using historical flight data.",
+        "Built Power BI dashboards to analyze delays, cancellations, airline performance, and route-level trends."
+      ],
+      "impact": "Converted large-scale flight data into an analytics solution combining data processing, data warehousing, machine learning, and business intelligence.",
+      "dashboardImage": "/images/airline-dashboard.png",
+      "architectureImage": "/images/airline-architecture.png"
+    },
     {
-      "title": "Skill Swap Platform",
-      "category": "Full Stack Development",
-      "description": "Built a peer-to-peer learning platform where users can share their skills, discover people with complementary expertise, and connect to exchange knowledge.",
+      "title": "SkillSwap - Skill Exchange Platform",
+      "category": "Full-Stack Development",
+      "description": "Developed a peer-to-peer skill exchange platform that helps users share their expertise and connect with people who want to learn complementary skills.",
       "stack": [
         "React",
         "Node.js",
@@ -149,37 +144,34 @@
         "REST APIs"
       ],
       "features": [
-        "Skill listing and search-based discovery",
-        "Peer-to-peer learning and interaction workflows",
-        "Structured backend APIs for platform functionality"
+        "Created a web platform for users to showcase skills and discover learning opportunities.",
+        "Implemented frontend and backend components for platform functionality.",
+        "Structured the application around user profiles and skill discovery."
       ],
-      "impact": "Made it easier to discover peer-learning opportunities while strengthening full-stack development and API design skills.",
       "github": "https://github.com/0711samarthgv/Skill-Swap"
     },
     {
       "title": "VoiceAuth Secure",
-      "category": "AI/ML",
-      "description": "Developed a speaker recognition-based authentication system that processes voice recordings, extracts audio features, and uses machine learning to support secure voice-based identity verification.",
+      "category": "Machine Learning & Audio Processing",
+      "description": "Developed a voice-based authentication prototype using audio processing and machine learning techniques to recognize speaker characteristics.",
       "stack": [
         "Python",
         "TensorFlow",
         "NumPy",
-        "SQLite",
-        "Audio Processing"
+        "MFCC",
+        "Audio Processing",
+        "SQLite"
       ],
       "features": [
-        "Audio preprocessing and feature extraction",
-        "Speaker model training and voice profile storage",
-        "Voice-based identity verification"
-      ],
-      "impact": "Achieved over 90% speaker recognition accuracy during testing, demonstrating the potential of voice-based biometric authentication.",
-      "github": "https://github.com/"
+        "Used audio feature extraction techniques to represent voice samples.",
+        "Applied machine learning techniques for speaker recognition.",
+        "Used SQLite to support local application data storage."
+      ]
     },
-    
     {
       "title": "Smart Finance",
-      "category": "Full Stack Development",
-      "description": "Developed a personal finance tracking application that helps users monitor expenses by category and understand spending patterns through interactive visualizations.",
+      "category": "Full-Stack Development",
+      "description": "Built a personal finance tracking application for organizing financial information and presenting spending data through a dashboard.",
       "stack": [
         "React",
         "Node.js",
@@ -191,33 +183,77 @@
         "Chart.js"
       ],
       "features": [
-        "Expense tracking across custom categories",
-        "Interactive dashboards for spending trends",
-        "Docker-based environment for consistent setup"
+        "Developed a React-based interface for financial tracking.",
+        "Built backend REST APIs for application functionality.",
+        "Used charts to visualize financial information and spending trends.",
+        "Integrated database access into the application."
       ],
-      "impact": "Improved visibility into spending habits through interactive analytics while demonstrating end-to-end full-stack development.",
       "github": "https://github.com/0711samarthgv/bud-wealth"
     }
   ],
   "experience": [
     {
-      "title": "Data Engineering & Business Automation Intern | Klüber Lubrication India Pvt. Ltd.",
-      "period": "May 2026 - August 2026",
-      "summary": "Worked on data engineering and automation, including data transformation, validation, ETL workflows, Power Platform automation, and Power BI reporting to streamline business processes and improve data quality."
+      "title": "Data Engineering & Business Automation Intern",
+      "company": "Klüber Lubrication India Pvt. Ltd.",
+      "location": "Mysuru, India",
+      "period": "June 2026 – August 2026",
+      "type": "Internship",
+      "summary": "Contributed to data engineering, business process automation, reporting, and digitalization initiatives. Worked with structured business data and Microsoft Power Platform tools to support more efficient workflows and data-driven reporting.",
+      "responsibilities": [
+        "Worked on data transformation, cleaning, validation, and standardization to improve data quality and prepare structured datasets for reporting and analysis.",
+        "Contributed to ETL-oriented data workflows to organize business information for downstream reporting and analytics.",
+        "Developed and supported Microsoft Power Platform solutions to streamline manual business processes and improve workflow efficiency.",
+        "Created and maintained Power BI dashboards to present business metrics and support data-driven decision-making.",
+        "Used Power Query for data preparation and transformation, and DAX for measures and KPI calculations.",
+        "Worked with structured data and reporting workflows to improve consistency, accessibility, and maintainability of business information.",
+        "Documented technical workflows and supported digitalization and process-improvement initiatives."
+      ],
+      "skills": [
+        "Data Transformation",
+        "Data Validation",
+        "ETL",
+        "Power Apps",
+        "Power Automate",
+        "Power BI",
+        "Power Query",
+        "DAX",
+        "Business Process Automation",
+        "Data Reporting"
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "title": "Coordinator",
+      "organization": "NSS Unit, VVCE",
+      "period": "August 2025 – Present",
+      "description": "Coordinated student initiatives and community-focused activities, supporting event planning, team collaboration, and the smooth execution of programs."
     },
     {
-      "title": "Coordinator | NSS Unit, VVCE",
-      "period": "August 2025 - Present",
-      "summary": "Coordinated student initiatives, organized team activities, and supported operational planning for community-focused programs."
-    },
-    {
-      "title": "Co-Lead | Vector Flow Student Club",
-      "period": "July 2025 - Present",
-      "summary": "Supported technical sessions and collaborative learning initiatives to encourage student engagement and developer growth."
+      "title": "Co-Lead",
+      "organization": "Vector Flow Student Club",
+      "period": "July 2025 – Present",
+      "description": "Supported technical and collaborative learning initiatives, encouraging knowledge sharing, student participation, and engagement with technology."
     }
   ],
   "achievements": [
-    "HackFusion 2K25 - Best Problem Statement, October 2025",
-    "Code-Hunt 2K25 Winner - Recognized among 200+ participants for algorithmic problem-solving, February 2025"
+    {
+      "title": "Best Problem Statement",
+      "organization": "HackFusion 2K25",
+      "period": "October 2025",
+      "description": "Recognized for the problem statement presented during the hackathon."
+    },
+    {
+      "title": "Code-Hunt 2K25 Winner",
+      "organization": "Code-Hunt 2K25",
+      "period": "February 2025",
+      "description": "Won a competitive coding event with more than 200 participants, demonstrating algorithmic problem-solving skills."
+    },
+    {
+      "title": "Data Science with Python",
+      "organization": "Wipro WCF",
+      "period": "",
+      "description": "Completed the Data Science with Python certification."
+    }
   ]
 }

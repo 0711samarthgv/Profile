@@ -1,10 +1,10 @@
+
 import { useEffect } from "react";
 import About from "./components/About";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
 import CursorSpotlight from "./components/CursorSpotlight";
 import Experience from "./components/Experience";
-import GitHubStats from "./components/GitHubStats";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -35,7 +35,6 @@ function App() {
         <SectionReveal>
           <Hero personal={personal} />
         </SectionReveal>
-        <GitHubStats username={personal.githubUsername} />
         <SectionReveal>
           <About about={personal.about} />
         </SectionReveal>

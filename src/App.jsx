@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import CursorSpotlight from "./components/CursorSpotlight";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
+import Leadership from "./components/Leadership";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import ScrollProgress from "./components/ScrollProgress";
@@ -16,11 +17,24 @@ import portfolioData from "./data/portfolioData.json";
 
 function App() {
   const { theme, toggleTheme } = useTheme();
-  const { seo, personal, skills, projects, experience, achievements } = portfolioData;
+
+  const {
+    seo,
+    personal,
+    skills,
+    projects,
+    experience,
+    leadership,
+    achievements
+  } = portfolioData;
 
   useEffect(() => {
     document.title = seo.title;
-    const desc = document.querySelector("meta[name='description']");
+
+    const desc = document.querySelector(
+      "meta[name='description']"
+    );
+
     if (desc) {
       desc.setAttribute("content", seo.description);
     }
@@ -30,30 +44,43 @@ function App() {
     <div className="min-h-screen app-grid-bg">
       <ScrollProgress />
       <CursorSpotlight />
+
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
+
       <main>
         <SectionReveal>
           <Hero personal={personal} />
         </SectionReveal>
+
         <SectionReveal>
           <About about={personal.about} />
         </SectionReveal>
+
         <SectionReveal>
           <Skills skills={skills} />
         </SectionReveal>
+
         <SectionReveal>
           <Projects projects={projects} />
         </SectionReveal>
+
         <SectionReveal>
           <Experience experience={experience} />
         </SectionReveal>
+
+        <SectionReveal>
+          <Leadership leadership={leadership} />
+        </SectionReveal>
+
         <SectionReveal>
           <Achievements achievements={achievements} />
         </SectionReveal>
+
         <SectionReveal>
           <Contact personal={personal} />
         </SectionReveal>
       </main>
+
       <footer className="mx-auto max-w-6xl px-5 py-8 text-center text-xs text-muted md:px-8">
         Designed and developed by {personal.name}
       </footer>

@@ -1,3 +1,4 @@
+
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
@@ -7,6 +8,8 @@ const navItems = [
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
+  { label: "Leadership", href: "#leadership" },
+  { label: "Achievements", href: "#achievements" },
   { label: "Contact", href: "#contact" }
 ];
 
@@ -20,7 +23,7 @@ export default function Navbar({ theme, onToggleTheme }) {
           Samarth<span className="text-primary">.dev</span>
         </a>
 
-        <div className="hidden gap-6 md:flex">
+        <div className="hidden gap-5 md:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -42,8 +45,10 @@ export default function Navbar({ theme, onToggleTheme }) {
           >
             {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
           </motion.button>
+
           <motion.button
             aria-label="Toggle navigation menu"
+            aria-expanded={open}
             className="rounded-full border border-border bg-card p-2.5 transition md:hidden"
             onClick={() => setOpen((prev) => !prev)}
             type="button"
@@ -53,8 +58,9 @@ export default function Navbar({ theme, onToggleTheme }) {
           </motion.button>
         </div>
       </nav>
+
       <AnimatePresence>
-        {open ? (
+        {open && (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -74,7 +80,7 @@ export default function Navbar({ theme, onToggleTheme }) {
               ))}
             </div>
           </motion.div>
-        ) : null}
+        )}
       </AnimatePresence>
     </header>
   );

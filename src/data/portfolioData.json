@@ -130,8 +130,8 @@
         "Built Power BI dashboards to analyze delays, cancellations, airline performance, and route-level trends."
       ],
       "impact": "Converted large-scale flight data into an analytics solution combining data processing, data warehousing, machine learning, and business intelligence.",
-      "dashboardImage": "/images/airline-dashboard.png",
-      "architectureImage": "/images/airline-architecture.png"
+      "dashboardImage": "/airline-dashboard.png",
+      "architectureImage": "/airline-architecture.png"
     },
     {
       "title": "SkillSwap - Skill Exchange Platform",

@@ -41,9 +41,9 @@ export default function Hero({ personal = {} }) {
         transition={{ duration: 0.7 }}
         className="rounded-3xl border border-border bg-card/70 p-8 shadow-glass backdrop-blur md:p-12"
       >
-        <p className="mb-3 text-sm uppercase tracking-[0.3em] text-primary">
-          Available for internships
-        </p>
+           <p className="mb-3 text-sm uppercase tracking-[0.3em] text-primary">
+            TURNING IDEAS INTO INTELLIGENT SOLUTIONS
+          </p>
 
         <h1 className="text-4xl font-extrabold leading-tight md:text-6xl">
           {personal?.name || "Samarth G V"}

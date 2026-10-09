@@ -1,19 +1,30 @@
+
 import { AnimatePresence, motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { useMemo, useState } from "react";
 import SectionTitle from "./SectionTitle";
 
-export default function Projects({ projects }) {
+export default function Projects({ projects = [] }) {
   const [active, setActive] = useState("All");
-  const filters = ["All", ...new Set(projects.map((p) => p.category))];
+
+  const filters = [
+    "All",
+    ...new Set(projects.map((project) => project.category))
+  ];
 
   const visibleProjects = useMemo(() => {
     if (active === "All") return projects;
-    return projects.filter((project) => project.category === active);
+
+    return projects.filter(
+      (project) => project.category === active
+    );
   }, [active, projects]);
 
   return (
-    <section id="projects" className="mx-auto max-w-6xl px-5 py-16 md:px-8">
+    <section
+      id="projects"
+      className="mx-auto max-w-6xl px-5 py-16 md:px-8"
+    >
       <SectionTitle
         eyebrow="Projects"
         title="Flagship Work"
@@ -49,40 +60,140 @@ export default function Projects({ projects }) {
               transition={{ duration: 0.35 }}
               className="rounded-2xl border border-border bg-card p-6 shadow-glass"
             >
-              <div className="mb-4 flex items-center justify-between">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
-                <span className="rounded-full bg-secondary/15 px-3 py-1 text-xs font-semibold text-secondary">
+              <div className="mb-4 flex items-center justify-between gap-3">
+                <h3 className="text-xl font-semibold">
+                  {project.title}
+                </h3>
+
+                <span className="shrink-0 rounded-full bg-secondary/15 px-3 py-1 text-xs font-semibold text-secondary">
                   {project.category}
                 </span>
               </div>
 
-              <p className="mb-4 text-sm leading-relaxed text-muted">{project.description}</p>
+              <p className="mb-4 text-sm leading-relaxed text-muted">
+                {project.description}
+              </p>
 
-              <p className="mb-3 text-sm font-semibold">Key Features</p>
+              {/* Project images */}
+              {(project.dashboardImage ||
+                project.architectureImage) && (
+                <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {project.dashboardImage && (
+                    <div className="min-w-0">
+                      <p className="mb-2 text-sm font-semibold">
+                        Dashboard Preview
+                      </p>
+
+                      <a
+                        href={project.dashboardImage}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open dashboard image in a new tab"
+                      >
+                        <img
+                          src={project.dashboardImage}
+                          alt={`${project.title} dashboard`}
+                          loading="lazy"
+                          className="h-48 w-full rounded-xl border border-border object-cover transition hover:opacity-90"
+                          onError={(event) => {
+                            console.error(
+                              "Dashboard image failed to load:",
+                              event.currentTarget.src
+                            );
+                            event.currentTarget.style.display = "none";
+                          }}
+                        />
+                      </a>
+                    </div>
+                  )}
+
+                  {project.architectureImage && (
+                    <div className="min-w-0">
+                      <p className="mb-2 text-sm font-semibold">
+                        System Architecture
+                      </p>
+
+                      <a
+                        href={project.architectureImage}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open architecture image in a new tab"
+                      >
+                        <img
+                          src={project.architectureImage}
+                          alt={`${project.title} architecture`}
+                          loading="lazy"
+                          className="h-48 w-full rounded-xl border border-border bg-bg object-contain transition hover:opacity-90"
+                          onError={(event) => {
+                            console.error(
+                              "Architecture image failed to load:",
+                              event.currentTarget.src
+                            );
+                            event.currentTarget.style.display = "none";
+                          }}
+                        />
+                      </a>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              <p className="mb-3 text-sm font-semibold">
+                Key Features
+              </p>
+
               <ul className="mb-4 list-disc space-y-1 pl-5 text-sm text-muted">
-                {project.features.map((feature) => (
+                {(project.features || []).map((feature) => (
                   <li key={feature}>{feature}</li>
                 ))}
               </ul>
 
-              <p className="mb-2 text-sm font-semibold">Tech Stack</p>
+              <p className="mb-2 text-sm font-semibold">
+                Tech Stack
+              </p>
+
               <div className="mb-4 flex flex-wrap gap-2">
-                {project.stack.map((tech) => (
-                  <span key={tech} className="rounded-md bg-bg px-2.5 py-1 text-xs text-muted">
+                {(project.stack || []).map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-md bg-bg px-2.5 py-1 text-xs text-muted"
+                  >
                     {tech}
                   </span>
                 ))}
               </div>
 
-              <p className="mb-4 text-sm text-primary">{project.impact}</p>
+              {project.impact && (
+                <p className="mb-4 text-sm text-primary">
+                  {project.impact}
+                </p>
+              )}
 
-              <div className="flex gap-4 text-sm font-semibold">
-                <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1">
-                  <Github size={15} /> GitHub
-                </a>
-                <a href={project.demo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1">
-                  <ExternalLink size={15} /> Demo
-                </a>
+              <div className="flex flex-wrap gap-4 text-sm font-semibold">
+                {project.github &&
+                  project.github !== "https://github.com/" && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1"
+                    >
+                      <Github size={15} />
+                      GitHub
+                    </a>
+                  )}
+
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1"
+                  >
+                    <ExternalLink size={15} />
+                    Live Demo
+                  </a>
+                )}
               </div>
             </motion.article>
           ))}

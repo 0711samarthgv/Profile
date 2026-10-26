@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const navItems = [
   { label: "About", href: "#about" },
+  { label: "Education", href: "#education" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
@@ -23,6 +24,7 @@ export default function Navbar({ theme, onToggleTheme }) {
           Samarth<span className="text-primary">.dev</span>
         </a>
 
+        {/* Desktop navigation */}
         <div className="hidden gap-5 md:flex">
           {navItems.map((item) => (
             <a
@@ -36,6 +38,7 @@ export default function Navbar({ theme, onToggleTheme }) {
         </div>
 
         <div className="flex items-center gap-2">
+          {/* Theme toggle */}
           <motion.button
             aria-label="Toggle theme"
             className="rounded-full border border-border bg-card p-2.5 transition hover:scale-105"
@@ -43,12 +46,18 @@ export default function Navbar({ theme, onToggleTheme }) {
             type="button"
             whileTap={{ scale: 0.9 }}
           >
-            {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+            {theme === "dark" ? (
+              <Sun size={16} />
+            ) : (
+              <Moon size={16} />
+            )}
           </motion.button>
 
+          {/* Mobile menu toggle */}
           <motion.button
             aria-label="Toggle navigation menu"
             aria-expanded={open}
+            aria-controls="mobile-navigation"
             className="rounded-full border border-border bg-card p-2.5 transition md:hidden"
             onClick={() => setOpen((prev) => !prev)}
             type="button"
@@ -59,9 +68,11 @@ export default function Navbar({ theme, onToggleTheme }) {
         </div>
       </nav>
 
+      {/* Mobile navigation */}
       <AnimatePresence>
         {open && (
           <motion.div
+            id="mobile-navigation"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}

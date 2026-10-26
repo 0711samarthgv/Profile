@@ -19,7 +19,14 @@
   "skills": [
     {
       "category": "Programming Languages",
-      "items": ["Python", "SQL", "C++", "Java", "JavaScript", "TypeScript"]
+      "items": [
+        "Python",
+        "SQL",
+        "C++",
+        "Java",
+        "JavaScript",
+        "TypeScript"
+      ]
     },
     {
       "category": "AI & Machine Learning",
@@ -220,6 +227,17 @@
         "Business Process Automation",
         "Data Reporting"
       ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering",
+      "field": "Computer Science and Engineering (Artificial Intelligence & Machine Learning)",
+      "institution": "Vidyavardhaka College of Engineering (VVCE)",
+      "location": "Mysuru, Karnataka, India",
+      "period": "2023 – 2027",
+      "status": "graduation: JULY 2027",
+      "grade": "CGPA: 8.43"
     }
   ],
   "leadership": [

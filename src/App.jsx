@@ -4,6 +4,7 @@ import About from "./components/About";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
 import CursorSpotlight from "./components/CursorSpotlight";
+import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Leadership from "./components/Leadership";
@@ -24,6 +25,7 @@ function App() {
     skills,
     projects,
     experience,
+    education,
     leadership,
     achievements
   } = portfolioData;
@@ -54,6 +56,10 @@ function App() {
 
         <SectionReveal>
           <About about={personal.about} />
+        </SectionReveal>
+
+        <SectionReveal>
+          <Education education={education} />
         </SectionReveal>
 
         <SectionReveal>
